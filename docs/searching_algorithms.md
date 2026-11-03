@@ -120,9 +120,9 @@ $$index = {\min(offset + fibMin2,\;n-1)}$$
 4. Set variable `pos = (See Position Formula)` 
 5. If array[pos] == target. <br>
     \- Target is found, return 0 
-6. If array[pos] > target: <br> 
+6. If array[pos] < target: <br> 
     \- Set `high = pos - 1` 
-7. If array[pos] < target: <br> 
+7. If array[pos] > target: <br> 
     \- Set `low = pos + 1` 
 8. End While Loop. 
 9. Target could not be found, return 1. 
