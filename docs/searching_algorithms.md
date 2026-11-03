@@ -190,9 +190,9 @@ Space Complexity: O(1)
 6. If array[mid1] == target OR array[mid2] == target: <br> 
     \- Target has been found, return 0 
 7. If array[mid1] < target: <br> 
-    \- Set `right = mid1 - 1` 
+    \- Set `left = mid1 + 1` 
 8. Else If array[mid2] > target: <br> 
-    \- Set `left = mid2 + 1`
+    \- Set `right = mid2 - 1`
 9. Else: <br>
     \- Set `left = mid1 + 1` <br> 
     \- Set `right = mid2 - 1` 
